@@ -39,14 +39,17 @@ Users have many tweets, but a tweet only has one user.
 	WHERE **user.id = whatever specific ID** 
 
 * the tweets for a certain user id that were made after last Wednesday (whenever last Wednesday was for you)
+	
 	SELECT body FROM users JOIN tweets ON users.id = user_id 
 	WHERE user_id = ** USER ** AND tweets.created_at > 2014-04-24 
 
 * all the tweets associated with a given user's twitter handle
+	
 	SELECT tweets.id, body FROM users JOIN tweets ON users.id = user_id 
 	WHERE handle = ** HANDLE ** 
 
 * the twitter handle associated with a given tweet id
+	
 	SELECT handle FROM users JOIN tweets ON users.id = user_id
 	WHERE tweets.id = ** DESIRED TWEET ID **
 
