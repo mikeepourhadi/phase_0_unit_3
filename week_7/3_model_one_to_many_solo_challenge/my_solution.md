@@ -55,3 +55,5 @@ Users have many tweets, but a tweet only has one user.
 
 ## Release 5: Reflection
 <!-- Be sure to add your reflection here!!! -->
+
+This was fun. Applying information that we learned to a real-world application is very effective for me when it comes to my learning. Really breaking down Twitter into fields and inputs gave a me a new perspective on the site as a whole, and it gave me some perspective on SQL statements. I'll be honest, I was taken somewhat by surprise with the SQL statements at the end. I'm glad they were there, though, as again it was helpful to have a direct example to real life instead of staying high level. At the end of the day, I think this challenge helped me learn SQL lite better than the rest of the challenges because I had to learn a few functions and apply them to something I could see in front of my face. I am confident in this exercise, aside form perhaps my schema design.
