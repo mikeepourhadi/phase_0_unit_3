@@ -7,7 +7,7 @@ variables match (i.e., 'Joseph' is the first element in students; his scores are
 
 Do not alter the students and scores code.
 
-I worked on this challenge with Tyler Keating
+I worked on this challenge with Tyler Keating (briefly)
 
 */
 
@@ -27,14 +27,34 @@ var scores = [ [80, 70, 70, 100],
 // Write your code below.
 
 var average = function(list) { 
-  var mean = 0;
-  for (var i = 1; i < list.length; i++) {
-    mean += list[i];
+  var sum = 0;
+  for (var i = 0; i < list.length; i++) {
+    sum += list[i];
   }
-  return mean / list.length;
+  return sum / list.length;
 };
 
-var gradebook = 
+var gradebook = {
+  "Joseph": {
+    "testScores": scores[0]
+  },
+  "Susan": {
+    "testScores": scores[1]
+  },
+  "William": {
+    "testScores": scores[2]
+  },
+  "Elizabeth": {
+    "testScores": scores[3]
+  },
+  addScore: function(name, score) {
+    gradebook[name].testScores.push(score); 
+  },
+  getAverage: function(name) {
+    average(gradebook[name].testScores);
+  }
+};
+
 
 
 
@@ -43,7 +63,8 @@ var gradebook =
 // Refactored Solution
 
 
-
+// I think I can refactor my solution to create the gradebook object and populate it
+// automatically, but I just can't quite figure it out
 
 
 
@@ -52,7 +73,7 @@ var gradebook =
 // __________________________________________
 // Reflect
 
-
+// This was a rough challenge for me, and I still have not managed to have all of the tests pass. Unfortunately, I can't find out what's wrong with my get average function. I will return to this assignment later in the week, time permitting, to see if I can figure it out. Also: I'm glad these JS challenges were here - it gives me a clearer perspective on how much I need to stay on top of practicing my work. I had completely forgotten JS syntax, so this challenge was a tough one for me overall.
 
 
 
@@ -71,7 +92,7 @@ function assert(test, message, test_number) {
   }
   console.log(test_number + "true");
   return true;
-}
+};
 
 assert(
   (average instanceof Function),
