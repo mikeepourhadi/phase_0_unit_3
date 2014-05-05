@@ -1,7 +1,7 @@
 # U3.W8-9: Reverse Words
 
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge with past me from Socrates
 
 # 2. Pseudocode
 
