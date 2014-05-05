@@ -7,7 +7,7 @@ variables match (i.e., 'Joseph' is the first element in students; his scores are
 
 Do not alter the students and scores code.
 
-I worked on this challenge [by myself, with:]
+I worked on this challenge with Tyler Keating
 
 */
 
@@ -26,7 +26,15 @@ var scores = [ [80, 70, 70, 100],
 // __________________________________________
 // Write your code below.
 
+var average = function(list) { 
+  var mean = 0;
+  for (var i = 1; i < list.length; i++) {
+    mean += list[i];
+  }
+  return mean / list.length;
+};
 
+var gradebook = 
 
 
 
