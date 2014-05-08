@@ -48,10 +48,10 @@ var gradebook = {
     "testScores": scores[3]
   },
   addScore: function(name, score) {
-    gradebook[name].testScores.push(score); 
+    return this[name].testScores.push(score); 
   },
   getAverage: function(name) {
-    average(gradebook[name].testScores);
+    return average(this[name].testScores);
   }
 };
 
