@@ -1,7 +1,7 @@
 # U3.W8-9: Triangle Debugger
 
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge by myself
 
 
 # 1. Original Solution
