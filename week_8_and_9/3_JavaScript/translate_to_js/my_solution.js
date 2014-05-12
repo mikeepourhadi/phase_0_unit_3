@@ -1,7 +1,7 @@
 // U3.W8-9: Challenge you're converting : FIZZ BUZZ
 
 
-// I worked on this challenge [by myself, with: ].
+// I worked on this challenge by myself
 
 // 2. Pseudocode
 
