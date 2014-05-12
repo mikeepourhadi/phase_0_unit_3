@@ -1,5 +1,93 @@
 [Week 8 and 9 Home](./)
 
+
+
+CREATE TABLE products (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    item_name VARCHAR(64) NOT NULL,
+    barcode_num INTEGER NOT NULL,
+    price INTEGER NOT NULL,
+    weight INTEGER NOT NULL,
+    ingredients_id INTEGER NOT NULL,
+    created_at DATETIME NOT NULL,
+    updated_at DATETIME NOT NULL, 
+    FOREIGN KEY (ingredients_id) REFERENCES ingredients(id)
+    );
+
+CREATE TABLE ingredients (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  calories INTEGER NOT NULL,
+  carbohydrates INTEGER NOT NULL,
+  sodium INTEGER NOT NULL,
+  vit_id INTEGER NOT NULL,
+  protein INTEGER NOT NULL,
+  created_at DATETIME NOT NULL,
+  updated_at DATETIME NOT NULL,
+  FOREIGN KEY (vit_id) REFERENCES vitamins(id)
+  )
+
+  CREATE TABLE vitamins (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  vit_a INTEGER NOT NULL,
+  vit_b INTEGER NOT NULL,
+  vit_c INTEGER NOT NULL,
+  vit_d INTEGER NOT NULL,
+  vit_k INTEGER NOT NULL,
+  created_at DATETIME NOT NULL,
+  updated_at DATETIME NOT NULL
+  );
+
+  	INSERT INTO products
+(item_name, barcode_num, price, weight, ingredients_id, created_at, updated_at)
+	VALUES
+('Ham', '123456079', '12', '10', '135', DATETIME('now'), DATETIME('now'));
+
+  INSERT INTO products
+(item_name, barcode_num, price, weight, ingredients_id, created_at, updated_at)
+VALUES
+('Frosted Flakes', '123412379', '5', '8', '175', DATETIME('now'), DATETIME('now'));
+
+  INSERT INTO products
+(item_name, barcode_num, price, weight, ingredients_id, created_at, updated_at)
+VALUES
+('Coca Cola', '245450009', '25', '35', '002', DATETIME('now'), DATETIME('now'));
+
+  INSERT INTO products
+(item_name, barcode_num, price, weight, ingredients_id, created_at, updated_at)
+VALUES
+('Peanut Butter', '353446002', '45', '3000', '001', DATETIME('now'), DATETIME('now'));
+
+  INSERT INTO products
+(item_name, barcode_num, price, weight, ingredients_id, created_at, updated_at)
+VALUES
+('Cookies', '111230079', '5', '8', '003', DATETIME('now'), DATETIME('now'));
+
+  INSERT INTO products
+(item_name, barcode_num, price, weight, ingredients_id, created_at, updated_at)
+VALUES
+('Brownies', '136250000', '10', '4', '005', DATETIME('now'), DATETIME('now'));
+
+  INSERT INTO products
+(item_name, barcode_num, price, weight, ingredients_id, created_at, updated_at)
+VALUES
+('Beer', '123288800', '45', '22', '006', DATETIME('now'), DATETIME('now'));
+
+  INSERT INTO products
+(item_name, barcode_num, price, weight, ingredients_id, created_at, updated_at)
+VALUES
+('Gin', '100006079', '60', '17', '007', DATETIME('now'), DATETIME('now'));
+
+  INSERT INTO products
+(item_name, barcode_num, price, weight, ingredients_id, created_at, updated_at)
+VALUES
+('Whiskey', '100032079', '55', '9', '008', DATETIME('now'), DATETIME('now'));
+
+  INSERT INTO products
+(item_name, barcode_num, price, weight, ingredients_id, created_at, updated_at)
+VALUES
+('Fake Meat', '124776079', '40', '5', '009', DATETIME('now'), DATETIME('now'));
+
+
 #U3.W8-9: Create your Own Database
 
 ## Learning Competencies

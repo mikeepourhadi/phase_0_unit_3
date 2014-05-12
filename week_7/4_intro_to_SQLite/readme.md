@@ -39,6 +39,7 @@ sqlite>
 
 Adding a schema is easy too!  If you wanted to create a <code>users</code> table, you can paste the following into the sqlite shell and hit **enter**:
 
+
 ```sql
 CREATE TABLE users (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
